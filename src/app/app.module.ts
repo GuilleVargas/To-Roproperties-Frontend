@@ -10,8 +10,6 @@ import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GeneralComponent } from './pages/general/general.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { TasksComponent } from './components/tasks/tasks.component';
-import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 
@@ -22,8 +20,6 @@ import { SigninComponent } from './components/signin/signin.component';
     HeaderComponent,
     FooterComponent,
     GeneralComponent,
-    TasksComponent,
-    PrivateTasksComponent,
     SignupComponent,
     SigninComponent
   ],
