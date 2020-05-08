@@ -1,0 +1,27 @@
+<div class="cabecera">
+    
+    <img class="imagenCabecera" routerLink="/general" src="\assets\toro.png">
+
+    <div class="home">
+            <button class="btn-home" routerLink="/" mat-raised-button>Inicio</button>
+        </div>
+    <div class="add">
+        <button class="btn-add" routerLink="/form" mat-raised-button>Añadir vivienda</button>
+    </div>
+    <div class="signin">
+        <button class="btn-signin" routerLink="/signin" mat-raised-button>Acceso Usuarios</button>
+    </div>
+   
+
+    <div class="contact-container">
+        <button (click)="mostrar = !mostrar" class="btn-contact"  mat-raised-button>Información</button>
+    <div [ngClass]="{hide: mostrar}" class="contact-info">
+        <p class="cont-nombre">Agente: {{contacto.nombre}}</p>
+        <p class="cont-telefono">Teléfono: {{contacto.telefono}}</p>
+        <p class="cont-correo">Correo: {{contacto.correo}}</p>
+        <p class="cont-direccion">Dirección: {{contacto.direccion}}</p>
+    </div>
+    </div>
+    
+</div>
+   

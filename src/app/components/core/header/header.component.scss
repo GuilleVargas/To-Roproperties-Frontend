@@ -1,0 +1,36 @@
+.cabecera {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .imagenCabecera {
+    margin-left: 45px;
+    height: 65px;
+    width: 120px;
+  }
+
+  .btn-contact {
+    margin-right: 8px;
+  }
+
+  .contact-info {
+    position: absolute;
+    right: 4px;
+    margin-top: 24px;
+    z-index: 2;
+    background-color: rgba(#fff,0.8);
+    padding: 12px;
+    border-radius: 8px; //Borde redondito
+    border: 1px solid;
+    transition: all .25s linear; 
+    box-shadow: 2px 4px 4px 2px grey;
+  }
+  
+.hide{
+  opacity: 0;
+}
+
+
+  
+}

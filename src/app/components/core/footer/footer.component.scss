@@ -1,0 +1,10 @@
+div{
+    width: 100%;    //Ocupe todo el ancho de la página
+    height: 100px;
+    background-color: grey;
+    color: white;
+    position: relative; 
+    bottom: 0px;       //Para tenerlo pegado abajo
+    display: flex;  //Activamos el flex para poder dar estilos de flex
+    justify-content: center;      //alineamos al centro
+}
