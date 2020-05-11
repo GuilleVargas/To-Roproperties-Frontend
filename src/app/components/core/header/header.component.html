@@ -9,12 +9,12 @@
         <button class="btn-add" routerLink="/form" mat-raised-button>Añadir vivienda</button>
     </div>
     <div class="signin">
-        <button class="btn-signin" routerLink="/signin" mat-raised-button>Acceso Usuarios</button>
+        <button class="btn-signin" routerLink="/signin" mat-raised-button><i class="fas fa-users"></i> Acceso Usuarios</button>
     </div>
    
 
     <div class="contact-container">
-        <button (click)="mostrar = !mostrar" class="btn-contact"  mat-raised-button>Información</button>
+        <button (click)="mostrar = !mostrar" class="btn-contact"  mat-raised-button><i class="fas fa-info-circle"></i> Información</button>
     <div [ngClass]="{hide: mostrar}" class="contact-info">
         <p class="cont-nombre">Agente: {{contacto.nombre}}</p>
         <p class="cont-telefono">Teléfono: {{contacto.telefono}}</p>
