@@ -12,6 +12,10 @@ import { GeneralComponent } from './pages/general/general.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { TasksComponent } from './components/tasks/tasks.component';
+import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
+import { PrivateUserComponent } from './components/private-user/private-user.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +25,10 @@ import { SigninComponent } from './components/signin/signin.component';
     FooterComponent,
     GeneralComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    TasksComponent,
+    PrivateTasksComponent,
+    PrivateUserComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,8 @@ import { SigninComponent } from './components/signin/signin.component';
     BrowserAnimationsModule,
     MatSelectModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
