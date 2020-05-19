@@ -15,4 +15,8 @@ export class AuthService {
   signUp(user){
     return this.http.post<any>(this.URL + '/signup', user);
   }
+//Creo un método Signin que hará la petición a nuestro servidor de Node
+  signIn(user){
+    return this.http.post<any>(this.URL + '/signin', user); //Hago return para manejarlo desde el componente que utilice este método
+  }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,8 @@ import { AuthService } from '../../services/auth.service';
 
 export class SignupComponent implements OnInit{
 
-  constructor(private authservice: AuthService) {}
+  constructor(private authservice: AuthService, 
+    private router: Router) {}
 
   user = {
     email: '',
@@ -26,6 +28,7 @@ export class SignupComponent implements OnInit{
     res => {
       console.log(res)
       localStorage.setItem('token', res['token']);
+      this.router.navigate(['/']);
     },
     err => console.log(err)
     )}

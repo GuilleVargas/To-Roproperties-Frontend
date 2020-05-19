@@ -6,5 +6,12 @@
     
       .card{
         border-radius: 8px;
+        
+        .card-header{
+          text-align: center;
+          font-size: x-large;
+          font-weight: bold;
+        }
+        
       }
 }

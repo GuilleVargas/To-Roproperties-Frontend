@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import {PrivateUserRoutingModule} from './private-user-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    PrivateUserRoutingModule
   ]
 })
 export class PrivateUserModule { }
