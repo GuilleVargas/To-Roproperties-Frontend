@@ -11,8 +11,16 @@ import {Router} from '@angular/router';
 
 export class SignupComponent implements OnInit{
 
+  show: boolean;
+
   constructor(private authservice: AuthService, 
-    private router: Router) {}
+    private router: Router) {
+      this.show = false;
+    }
+
+    password() {
+      this.show = !this.show;
+  }
 
   user = {
     email: '',

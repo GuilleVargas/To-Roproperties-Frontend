@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.scss']
 })
+
 export class SigninComponent implements OnInit {
 
   user= {
@@ -14,7 +15,15 @@ export class SigninComponent implements OnInit {
     password:''
   }
 
-  constructor( private authService: AuthService, private router: Router) { }
+  show: boolean;
+
+  constructor( private authService: AuthService, private router: Router) { 
+    this.show = false;
+  }
+
+  password() {
+    this.show = !this.show;
+}
 
   ngOnInit(): void {
   }
@@ -33,4 +42,6 @@ export class SigninComponent implements OnInit {
       }
     )
   }
+
+  
 }

@@ -66,6 +66,7 @@
   width: 116px;
   transition: all 0.5s;
   cursor: pointer;
+  outline: none;
 }
 .btn-search span {
   cursor: pointer;
@@ -87,4 +88,19 @@
 .btn-search:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+//CARD
+.TotalCard{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 150px;
+}
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
 }

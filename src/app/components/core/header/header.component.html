@@ -13,8 +13,9 @@
         <button class="btn-signin" routerLink="/signin" mat-raised-button><i class="fas fa-users"></i> Acceso Usuarios</button>
     </div>
    </ng-container>
+
    <ng-template  #loggedIn> 
-       <button class="logout" (click)="authService.logout()"  mat-raised-button>Cerrar sesión</button>
+       <button class="btn-logout" (click)="authService.logout()"  mat-raised-button>Cerrar sesión</button>
    </ng-template >
 
     <div class="contact-container">

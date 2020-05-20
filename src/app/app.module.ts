@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/core/header/header.component';
 import { FooterComponent } from './components/core/footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GeneralComponent } from './pages/general/general.component';
@@ -36,6 +37,7 @@ import { TokenInterceptorService } from './services/token-interceptor.service'
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
+    MatCardModule,
     BrowserAnimationsModule,
     MatSelectModule,
     FormsModule,
