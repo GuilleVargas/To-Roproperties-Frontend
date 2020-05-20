@@ -5,10 +5,17 @@
     <div class="add">
         <button class="btn-add" routerLink="/private-user" mat-raised-button>Añadir vivienda</button>
     </div>
+
+    <!--LOGIN Y LOGOUT
+    Si no está autenticado muestra el botón Acceso Usuarios-->
+    <ng-container *ngIf="!authService.loggedIn(); else loggedIn"> <!--Si no está autenticado muestra el botón Acceso Usuarios-->
     <div class="signin">
         <button class="btn-signin" routerLink="/signin" mat-raised-button><i class="fas fa-users"></i> Acceso Usuarios</button>
     </div>
-   
+   </ng-container>
+   <ng-template  #loggedIn> 
+       <button class="logout" (click)="authService.logout()"  mat-raised-button>Cerrar sesión</button>
+   </ng-template >
 
     <div class="contact-container">
         <button (click)="mostrar = !mostrar" class="btn-contact"  mat-raised-button><i class="fas fa-info-circle"></i> Información</button>

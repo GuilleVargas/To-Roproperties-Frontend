@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,7 @@ export class HeaderComponent{
   
   mostrar=true;
   
+  constructor( public authService: AuthService){}
   
   contacto =  {
     nombre: 'Matilde Torres',
