@@ -13,11 +13,14 @@
         font-weight: bold;
       }
 
-      
       .signup{
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
+      }
+
+      .btn-signup{
+        outline: none;
       }
       
     }

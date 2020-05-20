@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 // Components
 import { GeneralComponent } from './pages/general/general.component';
 
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
   {
     path: "",
     component: GeneralComponent
-  },
-  {
-     path: "form",
-     loadChildren: () => import('src/app/pages/form/form.module').then(m => m.FormModule) 
   },
  {
    path: "signin",
@@ -24,7 +22,9 @@ const routes: Routes = [
 },
 {
   path: "private-user",
-  loadChildren: () => import('src/app/components/private-user/private-user.module').then(m => m.PrivateUserModule) 
+  loadChildren: () => import('src/app/pages/private-user/private-user.module').then(m => m.PrivateUserModule),
+  canActivate: [AuthGuard] 
+
 }
 ];
 

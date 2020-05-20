@@ -9,6 +9,7 @@ export class HeaderComponent{
   
   mostrar=true;
   
+  
   contacto =  {
     nombre: 'Matilde Torres',
     telefono: '686018387',

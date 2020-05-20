@@ -14,8 +14,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
-import { PrivateUserComponent } from './components/private-user/private-user.component';
+import { PrivateUserComponent } from './pages/private-user/private-user.component';
 import {HttpClientModule} from '@angular/common/http';
+import { AuthGuard } from './auth.guard';
 
 
 @NgModule({
@@ -40,7 +41,9 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

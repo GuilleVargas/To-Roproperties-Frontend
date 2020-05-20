@@ -19,4 +19,9 @@ export class AuthService {
   signIn(user){
     return this.http.post<any>(this.URL + '/signin', user); //Hago return para manejarlo desde el componente que utilice este método
   }
+
+  //Método para comprobar si el usuario está logueado
+  loggedIn(){
+   return !!localStorage.getItem('token'); //El !! hace de if, si exixte devuelve T y sino pues F
+  }
 }
