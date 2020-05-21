@@ -10,4 +10,5 @@ export class AppComponent {
   constructor(private authService: AuthService){}
   
   title = 'To&Ro Properties';
+  
 }

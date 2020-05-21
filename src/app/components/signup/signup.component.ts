@@ -28,19 +28,20 @@ export class SignupComponent implements OnInit{
     password: ''
   }
 
-
+  private emailPattern: any = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  
   ngOnInit() {
     this.form = new FormGroup({
-      email: new FormControl('',[Validators.required, Validators.email]),
+      email: new FormControl('',[Validators.required, Validators.pattern(this.emailPattern)]),
       password: new FormControl('', Validators.required)
     });
   }
 
   //Con este método autentico
-  signUp(){
-    if(this.form.valid){this.authservice.signUp(this.user) //Hago la petición
+  signUp(usuario){
+    if(this.form.valid){this.authservice.signUp(usuario) //Hago la petición
     .subscribe( //Respuesta que me va a dar el servidor, me puede dar respuesta o error
-    res => {
+    res=> {
       console.log(res)
       localStorage.setItem('token', res['token']);
       this.router.navigate(['/']);
@@ -48,4 +49,6 @@ export class SignupComponent implements OnInit{
     err => console.log(err)
     )}
   }
+  
+  get email() { return this.form.get('email'); }
  }

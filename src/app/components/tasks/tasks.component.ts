@@ -9,9 +9,11 @@ import {TasksService } from '../../services/tasks.service';
 export class TasksComponent implements OnInit {
 
   tasks=[];
+
   constructor(private tasksService: TasksService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    
   }
 
 }

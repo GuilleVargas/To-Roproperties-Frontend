@@ -21,6 +21,10 @@ interface Inmueble {
 
 export class GeneralComponent {
 
+  mostrar1 = false;
+  mostrar2 = false;
+  mostrar3 = false;
+
   search = 'true';
 
   //Selector del tipo(compra,alquiler)

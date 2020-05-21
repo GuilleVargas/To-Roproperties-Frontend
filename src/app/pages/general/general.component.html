@@ -60,105 +60,163 @@
     </div>
   </div>
 
-  <div class="featured-title"><p>DESTACADOS</p> </div>
-  
   <div class="TotalCard">
-    <div class="featured">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan.
-          </p>
-          <button>holi</button>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan.
-          </p>
-          <button>holi</button>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan.
-          </p>
-          <button>holi</button>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan.
-          </p>
-          <button>holi</button>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan.
-          </p>
-          <button>holi</button>
-        </mat-card-content>
-      </mat-card>
-    </div>
+
+    <p class="featured-title">DESTACADOS</p>
+
+    <div class="featured-container">
+    
+        <!-- ITALIA -->
+        <mat-card class="customcard">
+          <img
+            mat-card-image
+            src="assets\salon.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+           
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle> 
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="price" mat-raised-button (click)="mostrar1 = !mostrar1">PRECIO</button>
+          </mat-card-actions>
+          <div class="precio" *ngIf="mostrar1">{{ 220 | currency: "EUR" }}</div>
+        </mat-card>
+
+       
+
+        <!-- ESPAÑA -->
+        <mat-card class="customcard">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ "España" | uppercase }}</mat-card-title>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="assets\salon.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. 
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="price" mat-raised-button (click)="mostrar2 = !mostrar2">PRECIO</button>
+          </mat-card-actions>
+          <div class="precio" *ngIf="mostrar2">{{ 150 | currency: "EUR" }}</div>
+        </mat-card>
+
+        <!-- GRECIA -->
+        <mat-card class="customcard">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ "grecia" | uppercase }}</mat-card-title>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="assets\salon.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. 
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="price" mat-raised-button (click)="mostrar3 = !mostrar3">PRECIO</button>
+          </mat-card-actions>
+          <div class="precio" *ngIf="mostrar3">{{ 330 | currency: "EUR" }}</div>
+        </mat-card>
+      </div>
+
+    <hr class="line">
+
+    <div class="news-container">
+      
+    <div class="featured-title"><p>NOVEDADES</p></div>
+
+   
+        <!-- ITALIA -->
+        <mat-card class="customcard">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ "Italia" | uppercase }}</mat-card-title>
+            <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="assets\salon.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. 
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="price" mat-raised-button (click)="mostrar1 = !mostrar1">PRECIO</button>
+          </mat-card-actions>
+          <div class="precio" *ngIf="mostrar1">{{ 220 | currency: "EUR" }}</div>
+        </mat-card>
+
+        
+
+        <!-- ESPAÑA -->
+        <mat-card class="customcard">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ "España" | uppercase }}</mat-card-title>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="assets\salon.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="price" mat-raised-button (click)="mostrar2 = !mostrar2">PRECIO</button>
+          </mat-card-actions>
+          <div class="precio" *ngIf="mostrar2">{{ 150 | currency: "EUR" }}</div>
+        </mat-card>
+
+        <!-- GRECIA -->
+        <mat-card class="customcard">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ "grecia" | uppercase }}</mat-card-title>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="assets\salon.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="price" mat-raised-button (click)="mostrar3 = !mostrar3">PRECIO</button>
+          </mat-card-actions>
+          <div class="precio" *ngIf="mostrar3">{{ 330 | currency: "EUR" }}</div>
+        </mat-card>
+      </div>
   </div>
 </div>

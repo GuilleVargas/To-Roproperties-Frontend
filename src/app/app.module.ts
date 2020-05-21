@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/core/header/header.component';
 import { FooterComponent } from './components/core/footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GeneralComponent } from './pages/general/general.component';
@@ -38,6 +39,7 @@ import { TokenInterceptorService } from './services/token-interceptor.service'
     AppRoutingModule,
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
     BrowserAnimationsModule,
     MatSelectModule,
     FormsModule,

@@ -1,5 +1,10 @@
 .cabecera {
   height: 70px;
+  width: 100%;    
+  top: 0;                       //Para dejar fijo arriba
+  background-color: white;
+  position: fixed;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
