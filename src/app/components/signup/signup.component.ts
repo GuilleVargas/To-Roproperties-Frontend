@@ -11,6 +11,7 @@ import {Router} from '@angular/router';
 
 export class SignupComponent implements OnInit{
 
+  form: FormGroup;
   show: boolean;
 
   constructor(private authservice: AuthService, 
@@ -27,11 +28,17 @@ export class SignupComponent implements OnInit{
     password: ''
   }
 
-  ngOnInit() {}
+
+  ngOnInit() {
+    this.form = new FormGroup({
+      email: new FormControl('',[Validators.required, Validators.email]),
+      password: new FormControl('', Validators.required)
+    });
+  }
 
   //Con este método autentico
   signUp(){
-    this.authservice.signUp(this.user) //Hago la petición
+    if(this.form.valid){this.authservice.signUp(this.user) //Hago la petición
     .subscribe( //Respuesta que me va a dar el servidor, me puede dar respuesta o error
     res => {
       console.log(res)
@@ -40,4 +47,5 @@ export class SignupComponent implements OnInit{
     },
     err => console.log(err)
     )}
+  }
  }

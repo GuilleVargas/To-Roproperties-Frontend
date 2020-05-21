@@ -91,13 +91,36 @@
 }
 
 //CARD
-.TotalCard{
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 150px;
+.featured-title{
+  width: 100%;
+  margin-top: 50px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  font-family: 'Courier Prime', monospace;
 }
+
+.TotalCard{
+  margin-bottom: 150px;
+  margin-top: 12px;
+  
+
+  .featured{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+
 .example-card {
-  max-width: 300px;
+  height: 420px;
+  margin-bottom: 150px;
+  margin-left: 80px;
+  border: solid 1px black;
 }
 
 .example-header-image {
