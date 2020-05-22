@@ -61,162 +61,294 @@
   </div>
 
   <div class="TotalCard">
-
     <p class="featured-title">DESTACADOS</p>
 
     <div class="featured-container">
-    
-        <!-- ITALIA -->
+      <!-- IZQUIERDA -->
+      <mat-card class="customcard">
+        <img
+          mat-card-image
+          class="imagee"
+          src="assets\salon.jpg"
+          alt="Photo of a hose"
+        />
+        <mat-card-header class="matheader">
+          <mat-card-subtitle class="subtitle"
+            >Hacienda Santa Ana en Urbanización Roche</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-content>
+          <p class="subp">España, Cádiz, Conil, Urbanización Roche</p>
+        </mat-card-content>
+        <hr />
+        <div class="iconscard">
+          <img
+            class="bed"
+            src="assets\bed.svg"
+            title="Dormitorios"
+            alt="Bedroom-icon"
+          />
+          <span class="iconNum">4</span>
+          <img
+            class="bath"
+            src="assets\bathroom.svg"
+            title="Baños"
+            alt="Bathroom-icon"
+          />
+          <span class="iconNum">2</span>
+          <img
+            class="meters"
+            src="assets\area.svg"
+            title="Metros"
+            alt="Meters-icon"
+          />
+          <span class="iconNum">854m²</span>
+        </div>
+        <div class="price">
+          <p class="pricep">Precio</p>
+          <p class="priceNum">245.000€</p>
+        </div>
+      </mat-card>
+
+      <!-- CENTRO -->
+      <mat-card class="customcard">
+        <img
+          mat-card-image
+          class="imagee"
+          src="assets\salon.jpg"
+          alt="Photo of a hose"
+        />
+        <mat-card-header class="matheader">
+          <mat-card-subtitle class="subtitle"
+            >Hacienda Santa Ana en Urbanización Roche</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-content>
+          <p class="subp">España, Cádiz, Conil, Urbanización Roche</p>
+        </mat-card-content>
+        <hr />
+        <div class="iconscard">
+          <img
+            class="bed"
+            src="assets\bed.svg"
+            title="Dormitorios"
+            alt="Bedroom-icon"
+          />
+          <span class="iconNum">4</span>
+          <img
+            class="bath"
+            src="assets\bathroom.svg"
+            title="Baños"
+            alt="Bathroom-icon"
+          />
+          <span class="iconNum">2</span>
+          <img
+            class="meters"
+            src="assets\area.svg"
+            title="Metros"
+            alt="Meters-icon"
+          />
+          <span class="iconNum">854m²</span>
+        </div>
+        <div class="price">
+          <p class="pricep">Precio</p>
+          <p class="priceNum">245.000€</p>
+        </div>
+      </mat-card>
+
+      <!-- DERECHA -->
+      <mat-card class="customcard">
+        <img
+          mat-card-image
+          class="imagee"
+          src="assets\salon.jpg"
+          alt="Photo of a hose"
+        />
+        <mat-card-header class="matheader">
+          <mat-card-subtitle class="subtitle"
+            >Hacienda Santa Ana en Urbanización Roche</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-content>
+          <p class="subp">España, Cádiz, Conil, Urbanización Roche</p>
+        </mat-card-content>
+        <hr />
+        <div class="iconscard">
+          <img
+            class="bed"
+            src="assets\bed.svg"
+            title="Dormitorios"
+            alt="Bedroom-icon"
+          />
+          <span class="iconNum">4</span>
+          <img
+            class="bath"
+            src="assets\bathroom.svg"
+            title="Baños"
+            alt="Bathroom-icon"
+          />
+          <span class="iconNum">2</span>
+          <img
+            class="meters"
+            src="assets\area.svg"
+            title="Metros"
+            alt="Meters-icon"
+          />
+          <span class="iconNum">854m²</span>
+        </div>
+        <div class="price">
+          <p class="pricep">Precio</p>
+          <p class="priceNum">245.000€</p>
+        </div>
+      </mat-card>
+
+      <hr class="line" />
+
+      <div class="news-container">
+        <div class="news-title"><p>NOVEDADES</p></div>
+
+        <!-- IZQUIERDA -->
         <mat-card class="customcard">
           <img
             mat-card-image
+            class="imagee"
             src="assets\salon.jpg"
-            alt="Photo of a Shiba Inu"
+            alt="Photo of a hose"
           />
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-           
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle> 
+          <mat-card-header class="matheader">
+            <mat-card-subtitle class="subtitle"
+              >Hacienda Santa Ana en Urbanización Roche</mat-card-subtitle
+            >
           </mat-card-header>
           <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            <p class="subp">España, Cádiz, Conil, Urbanización Roche</p>
           </mat-card-content>
-          <mat-card-actions>
-            <button class="price" mat-raised-button (click)="mostrar1 = !mostrar1">PRECIO</button>
-          </mat-card-actions>
-          <div class="precio" *ngIf="mostrar1">{{ 220 | currency: "EUR" }}</div>
+          <hr />
+          <div class="iconscard">
+            <img
+              class="bed"
+              src="assets\bed.svg"
+              title="Dormitorios"
+              alt="Bedroom-icon"
+            />
+            <span class="iconNum">4</span>
+            <img
+              class="bath"
+              src="assets\bathroom.svg"
+              title="Baños"
+              alt="Bathroom-icon"
+            />
+            <span class="iconNum">2</span>
+            <img
+              class="meters"
+              src="assets\area.svg"
+              title="Metros"
+              alt="Meters-icon"
+            />
+            <span class="iconNum">854m²</span>
+          </div>
+          <div class="price">
+            <p class="pricep">Precio</p>
+            <p class="priceNum">245.000€</p>
+          </div>
         </mat-card>
 
-       
-
-        <!-- ESPAÑA -->
+        <!-- CENTRO -->
         <mat-card class="customcard">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ "España" | uppercase }}</mat-card-title>
-          </mat-card-header>
           <img
             mat-card-image
+            class="imagee"
             src="assets\salon.jpg"
-            alt="Photo of a Shiba Inu"
+            alt="Photo of a hose"
           />
+          <mat-card-header class="matheader">
+            <mat-card-subtitle class="subtitle"
+              >Hacienda Santa Ana en Urbanización Roche</mat-card-subtitle
+            >
+          </mat-card-header>
           <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. 
-            </p>
+            <p class="subp">España, Cádiz, Conil, Urbanización Roche</p>
           </mat-card-content>
-          <mat-card-actions>
-            <button class="price" mat-raised-button (click)="mostrar2 = !mostrar2">PRECIO</button>
-          </mat-card-actions>
-          <div class="precio" *ngIf="mostrar2">{{ 150 | currency: "EUR" }}</div>
+          <hr />
+          <div class="iconscard">
+            <img
+              class="bed"
+              src="assets\bed.svg"
+              title="Dormitorios"
+              alt="Bedroom-icon"
+            />
+            <span class="iconNum">4</span>
+            <img
+              class="bath"
+              src="assets\bathroom.svg"
+              title="Baños"
+              alt="Bathroom-icon"
+            />
+            <span class="iconNum">2</span>
+            <img
+              class="meters"
+              src="assets\area.svg"
+              title="Metros"
+              alt="Meters-icon"
+            />
+            <span class="iconNum">854m²</span>
+          </div>
+          <div class="price">
+            <p class="pricep">Precio</p>
+            <p class="priceNum">245.000€</p>
+          </div>
         </mat-card>
 
-        <!-- GRECIA -->
+        <!-- DERECHA -->
         <mat-card class="customcard">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ "grecia" | uppercase }}</mat-card-title>
-          </mat-card-header>
           <img
             mat-card-image
+            class="imagee"
             src="assets\salon.jpg"
-            alt="Photo of a Shiba Inu"
+            alt="Photo of a hose"
           />
+          <mat-card-header class="matheader">
+            <mat-card-subtitle class="subtitle"
+              >Hacienda Santa Ana en Urbanización Roche</mat-card-subtitle
+            >
+          </mat-card-header>
           <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. 
-            </p>
+            <p class="subp">España, Cádiz, Conil, Urbanización Roche</p>
           </mat-card-content>
-          <mat-card-actions>
-            <button class="price" mat-raised-button (click)="mostrar3 = !mostrar3">PRECIO</button>
-          </mat-card-actions>
-          <div class="precio" *ngIf="mostrar3">{{ 330 | currency: "EUR" }}</div>
+          <hr />
+          <div class="iconscard">
+            <img
+              class="bed"
+              src="assets\bed.svg"
+              title="Dormitorios"
+              alt="Bedroom-icon"
+            />
+            <span class="iconNum">4</span>
+            <img
+              class="bath"
+              src="assets\bathroom.svg"
+              title="Baños"
+              alt="Bathroom-icon"
+            />
+            <span class="iconNum">2</span>
+            <img
+              class="meters"
+              src="assets\area.svg"
+              title="Metros"
+              alt="Meters-icon"
+            />
+            <span class="iconNum">854m²</span>
+          </div>
+          <div class="price">
+            <p class="pricep">Precio</p>
+            <p class="priceNum">245.000€</p>
+          </div>
         </mat-card>
+
       </div>
 
-    <hr class="line">
+    </div>
 
-    <div class="news-container">
-      
-    <div class="featured-title"><p>NOVEDADES</p></div>
-
-   
-        <!-- ITALIA -->
-        <mat-card class="customcard">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ "Italia" | uppercase }}</mat-card-title>
-            <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-          </mat-card-header>
-          <img
-            mat-card-image
-            src="assets\salon.jpg"
-            alt="Photo of a Shiba Inu"
-          />
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. 
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button class="price" mat-raised-button (click)="mostrar1 = !mostrar1">PRECIO</button>
-          </mat-card-actions>
-          <div class="precio" *ngIf="mostrar1">{{ 220 | currency: "EUR" }}</div>
-        </mat-card>
-
-        
-
-        <!-- ESPAÑA -->
-        <mat-card class="customcard">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ "España" | uppercase }}</mat-card-title>
-          </mat-card-header>
-          <img
-            mat-card-image
-            src="assets\salon.jpg"
-            alt="Photo of a Shiba Inu"
-          />
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button class="price" mat-raised-button (click)="mostrar2 = !mostrar2">PRECIO</button>
-          </mat-card-actions>
-          <div class="precio" *ngIf="mostrar2">{{ 150 | currency: "EUR" }}</div>
-        </mat-card>
-
-        <!-- GRECIA -->
-        <mat-card class="customcard">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ "grecia" | uppercase }}</mat-card-title>
-          </mat-card-header>
-          <img
-            mat-card-image
-            src="assets\salon.jpg"
-            alt="Photo of a Shiba Inu"
-          />
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button class="price" mat-raised-button (click)="mostrar3 = !mostrar3">PRECIO</button>
-          </mat-card-actions>
-          <div class="precio" *ngIf="mostrar3">{{ 330 | currency: "EUR" }}</div>
-        </mat-card>
-      </div>
   </div>
+  
 </div>
