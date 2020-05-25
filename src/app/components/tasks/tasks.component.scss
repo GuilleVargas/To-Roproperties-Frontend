@@ -1,0 +1,13 @@
+.list-group {
+  width: 100%;
+  margin-top: 70px;
+  align-items: center;
+
+  .list-group-item {
+    width: 90%;
+    height: 160px;
+    border: solid 1px grey;
+    margin-top: 12px;
+    border-radius: 8px;
+  }
+}

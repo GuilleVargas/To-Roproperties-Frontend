@@ -24,7 +24,10 @@ const routes: Routes = [
   path: "private-user",
   loadChildren: () => import('src/app/pages/private-user/private-user.module').then(m => m.PrivateUserModule),
   canActivate: [AuthGuard] 
-
+},
+{
+  path: "tasks",
+  loadChildren: () => import('src/app/components/tasks/tasks.module').then(m => m.TasksModule) 
 }
 ];
 
