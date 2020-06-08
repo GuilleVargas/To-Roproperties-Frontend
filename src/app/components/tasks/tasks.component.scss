@@ -1,13 +1,14 @@
-.list-group {
-  width: 100%;
-  margin-top: 70px;
-  align-items: center;
+.TotalCard {
+  margin-bottom: 150px;
+  margin-top: 80px;
+  transition: all 0.25s;
 
-  .list-group-item {
-    width: 90%;
-    height: 160px;
-    border: solid 1px grey;
-    margin-top: 12px;
-    border-radius: 8px;
+  .featured-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  
 }
+

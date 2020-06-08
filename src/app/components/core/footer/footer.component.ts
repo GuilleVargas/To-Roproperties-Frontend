@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   anio: number = 2018; 
-  constructor() { 
+  constructor(public authService: AuthService ) { 
 
     //this. anio = new Date().getFullYear(); Si lo que queremos es ir actualizando el año al actual.
   }

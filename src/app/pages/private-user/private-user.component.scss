@@ -1,8 +1,26 @@
-.global{
-    width: 100%;
-    height: 100%;
-    border: solid 1px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container{
+display: flex;
+justify-content: center;
+
+.card{
+   display: flex;
+   align-items: center;
+   margin-top: 100px;
+   margin-bottom: 80px;
+    width: 700px;
+    border-radius: 8px;
+
+    .card-header{
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        width: 700px;
+      }
+      .card-body{
+        width: 300px;
+        .form-group{
+            width: 200px;
+        }
+    }
+}
 }

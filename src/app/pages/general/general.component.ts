@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { House } from '../../models/House';
+import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
+import { HouseService } from './../../services/house.service';
 
 interface InmuebleGroup {
   name: string;
@@ -19,11 +21,39 @@ interface Inmueble {
 })
 
 
-export class GeneralComponent {
+export class GeneralComponent implements OnInit{
 
+  constructor(private houseService: HouseService) {
+  }
+  
+  myhouse=  {
+    "_id": "5ed76adeafccf846f0922edc",
+    "title": "Piso adosado de roche",
+    "subtitle": "Cadiz, Urbanización de Roche",
+    "w_search": "Compra",
+    "type": "Piso adosado",
+    "province": "Malaga",
+    "population": "Urbanización Roche",
+    "room": 18,
+    "bath": 5,
+    "meters": 1780,
+    "price": 2000000
+  };
   mostrar1 = false;
   mostrar2 = false;
   mostrar3 = false;
+
+ngOnInit(){
+  this.getAllHouses();
+}
+
+getAllHouses() {
+  this.houseService
+    .request('http://localhost:3000/houses')
+    .subscribe((data) => {
+      console.log(data);
+    });
+}
 
   search = 'true';
 

@@ -1,3 +1,18 @@
 <div class="foot">
-    &copy; {{anio}} To&Ro properties
+    <div class="titlefoot">
+    &copy; {{anio}} To&Ro properties</div>
+        <!--LOGIN Y LOGOUT
+        Si no está autenticado muestra el botón Acceso Usuarios-->
+        <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+            <!--Si no está autenticado muestra el botón Acceso Usuarios-->
+            
+                <a class="add" routerLink="/private-user"><i class="fas fa-plus-circle"></i>Añadir vivienda</a>
+           
+        </ng-container>
+
+        <ng-template #loggedIn>
+            
+                <a class="btn-logout" (click)="authService.logout()"><i class="fas fa-times-circle"></i>Cerrar sesión</a>
+            
+        </ng-template>
 </div>

@@ -1,6 +1,7 @@
-import { HousecardComponent } from './../../components/housecard/housecard.component';
+import { HousecardComponent } from './housecard.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
@@ -8,8 +9,8 @@ import { CommonModule } from '@angular/common';
     HousecardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    
   ]
 })
-
-export class GeneralModule { }
+export class HousecardModule { }

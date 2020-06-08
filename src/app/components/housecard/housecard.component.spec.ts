@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrivateTasksComponent } from './private-tasks.component';
+import { HousecardComponent } from './housecard.component';
 
-describe('PrivateTasksComponent', () => {
-  let component: PrivateTasksComponent;
-  let fixture: ComponentFixture<PrivateTasksComponent>;
+describe('HousecardComponent', () => {
+  let component: HousecardComponent;
+  let fixture: ComponentFixture<HousecardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrivateTasksComponent ]
+      declarations: [ HousecardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrivateTasksComponent);
+    fixture = TestBed.createComponent(HousecardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

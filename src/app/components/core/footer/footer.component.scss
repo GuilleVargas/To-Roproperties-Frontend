@@ -4,6 +4,24 @@
     background-color: grey;
     color: white;
     /*bottom: 0px;       Para tenerlo pegado abajo*/
-    display: flex;  //Activamos el flex para poder dar estilos de flex
-    justify-content: center;      //alineamos al centro
+    
+
+    .titlefoot{
+        background-color: grey;
+        color: white;
+        /*bottom: 0px;       Para tenerlo pegado abajo*/
+        display: flex;  //Activamos el flex para poder dar estilos de flex
+        justify-content: center;      //alineamos al centro
+    
+    }
+
+    .fas{
+        margin-right: 6px ;
+      }
+
+    .add{
+  text-decoration: none;
+  color: white;
+  margin-left: 380px;
+    }  
 }

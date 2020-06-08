@@ -23,9 +23,13 @@
       border-radius: 12px;
       background-color: rgba(#fff, 0.9);
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 670px) {
       .search-selector {
         flex-direction: column;
+        padding: 16px;
+        width: auto;
+        height: auto;
       }
     }
   }
@@ -141,76 +145,7 @@
     justify-content: center;
   }
 
-  .customcard {
-    height: 330px;
-    width: 375px;
-    margin: 12px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
-
-    .matheader {
-      width: 380px;
-      margin-left: -16px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: #424242;
-    }
-
-    .subp {
-      font-size: 12px;
-      color: grey;
-      margin-top: -10px;
-    }
-
-    .iconscard {
-      display: flex;
-      margin-top: -10px;
-
-      .bed {
-        width: 20px;
-        height: 29px;
-      }
-
-      .bath {
-        width: 20px;
-        height: 29px;
-        margin-left: 36px;
-      }
-
-      .meters {
-        width: 20px;
-        height: 29px;
-        margin-left: 36px;
-      }
-
-      .iconNum {
-        margin-left: 12px;
-        margin-top: 4px;
-      }
-    }
-
-    .price {
-      display: flex;
-      justify-content: space-between;
-      font-size: 16px;
-      margin-top: 14px;
-
-      .priceNum{
-        margin-right: 16px;
-      }
-    }
-  }
-
-  .customcard:hover {
-    transition: all 0.25s linear;
-    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  .customcard img {
-    width: 109.5%;
-    height: 150px;
-  }
+  
 
   .line {
     width: 180px;

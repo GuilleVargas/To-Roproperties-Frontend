@@ -15,11 +15,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { TasksComponent } from './components/tasks/tasks.component';
-import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
 import { PrivateUserComponent } from './pages/private-user/private-user.component';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AuthGuard } from './auth.guard';
-import { TokenInterceptorService } from './services/token-interceptor.service'
+import { TokenInterceptorService } from './services/token-interceptor.service';
+import { HousecardComponent } from './components/housecard/housecard.component'
 
 
 @NgModule({
@@ -31,8 +31,8 @@ import { TokenInterceptorService } from './services/token-interceptor.service'
     SignupComponent,
     SigninComponent,
     TasksComponent,
-    PrivateTasksComponent,
-    PrivateUserComponent
+    PrivateUserComponent,
+    HousecardComponent
   ],
   imports: [
     BrowserModule,

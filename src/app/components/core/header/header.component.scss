@@ -5,34 +5,19 @@
   background-color: white;
   position: fixed;
   z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 2px 4px 4px grey;
 
   .imagenCabecera {
-    margin-left: 45px;
     height: 65px;
     width: 120px;
+    margin-left: 25px;
     outline: none;
     cursor: pointer;
   }
 
-  .btn-add{
-    outline: none;
-  }
-
-  .btn-signin{
-    outline: none;
-  }
-
-  .btn-logout{
-    outline: none;
-  }
-
-  .btn-contact {
-    margin-right: 8px;
-    outline: none;
+  .fas{
+    margin-right: 6px ;
+    
   }
 
   .contact-info {
@@ -53,7 +38,64 @@
 }
 
 
+.hamburger{
+  width: 20px;
+  height: 29px;
+}
+
+#btn-menu{
+  display: none;
+}
+
+.label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.label:hover{
+  cursor: pointer;
+}
+
+.menu ul{
+  margin-left: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width:670px){
+  .label{
+    display: block;
+  }
+
+  .menu{
+    position: absolute;
+    width: 40%;
+    background: #fff;
+    opacity: 0;
+    border: solid 1px black;
+  }
+
+  .menu ul{
+    flex-direction: column;
+    margin-left: -25px;
+  }
 
 
+  #btn-menu:checked ~ .menu{
+    opacity: 1;
+  }
+}
   
 }

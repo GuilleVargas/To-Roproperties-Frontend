@@ -1,0 +1,22 @@
+<mat-card *ngIf="house" class="customcard">
+  <img mat-card-image class="imagee" src="assets\salon1.jpg" alt="Photo of a hose" />
+  <mat-card-header class="matheader">
+    <mat-card-subtitle class="subtitle">{{ house.title }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="subp">{{ house.province }} {{ house.population }}</p>
+  </mat-card-content>
+  <hr />
+  <div class="iconscard">
+    <img class="bed" src="assets\bed.svg" title="Dormitorios" alt="Bedroom-icon" />
+    <span class="iconNum">{{ house.room }}</span>
+    <img class="bath" src="assets\bathroom.svg" title="Baños" alt="Bathroom-icon" />
+    <span class="iconNum">{{ house.bath }}</span>
+    <img class="meters" src="assets\area.svg" title="Metros" alt="Meters-icon" />
+    <span class="iconNum">{{ house.meters }}m²</span>
+  </div>
+  <div class="price">
+    <p class="pricep">Precio</p>
+    <p class="priceNum">{{ house.price }}€</p>
+  </div>
+</mat-card>

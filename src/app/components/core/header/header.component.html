@@ -1,36 +1,28 @@
 <div class="cabecera">
-    
-    <img class="imagenCabecera" routerLink="/" src="\assets\toro.png">
-    
-    <div class="All">
-        <button class="btn-all" routerLink="/tasks" mat-raised-button>Ver todas</button>
-    </div>
+    <input type="checkbox" id="btn-menu" />
+    <label class="label" for="btn-menu">
+        <img class="hamburger" src="assets\open-menu.svg" title="hamburges" alt="Hamburger-icon" /></label>
 
-    <div class="add">
-        <button class="btn-add" routerLink="/private-user" mat-raised-button>Añadir vivienda</button>
-    </div>
+    <nav class="menu">
+        <ul>
+            <img class="imagenCabecera" routerLink="/" src="\assets\toro.png" />
+            <li>
+                <a routerLink="/tasks"><i class="fas fa-home"></i>Ver todas</a>
+            </li>
+        
 
-    <!--LOGIN Y LOGOUT
-    Si no está autenticado muestra el botón Acceso Usuarios-->
-    <ng-container *ngIf="!authService.loggedIn(); else loggedIn"> <!--Si no está autenticado muestra el botón Acceso Usuarios-->
-    <div class="signin">
-        <button class="btn-signin" routerLink="/signin" mat-raised-button><i class="fas fa-users"></i> Acceso Usuarios</button>
-    </div>
-   </ng-container>
-
-   <ng-template  #loggedIn> 
-       <button class="btn-logout" (click)="authService.logout()"  mat-raised-button>Cerrar sesión</button>
-   </ng-template >
-
-    <div class="contact-container">
-        <button (click)="mostrar = !mostrar" class="btn-contact"  mat-raised-button><i class="fas fa-info-circle"></i> Información</button>
-    <div [ngClass]="{hide: mostrar}" class="contact-info">
-        <p class="cont-nombre">Agente: {{contacto.nombre}}</p>
-        <p class="cont-telefono">Teléfono: {{contacto.telefono}}</p>
-        <p class="cont-correo">Correo: {{contacto.correo}}</p>
-        <p class="cont-direccion">Dirección: {{contacto.direccion}}</p>
-    </div>
-    </div>
-    
+            <div class="contact-container">
+                <li>
+                    <a (click)="mostrar = !mostrar" class="btn-contact"><i
+                            class="fas fa-info-circle"></i>Información</a>
+                </li>
+                <div [ngClass]="{ hide: mostrar }" class="contact-info">
+                    <p class="cont-nombre">Agente: {{ contacto.nombre }}</p>
+                    <p class="cont-telefono">Teléfono: {{ contacto.telefono }}</p>
+                    <p class="cont-correo">Correo: {{ contacto.correo }}</p>
+                    <p class="cont-direccion">Dirección: {{ contacto.direccion }}</p>
+                </div>
+            </div>
+        </ul>
+    </nav>
 </div>
-   
