@@ -7,14 +7,14 @@
         <ul>
             <img class="imagenCabecera" routerLink="/" src="\assets\toro.png" />
             <li>
-                <a routerLink="/tasks"><i class="fas fa-home"></i>Ver todas</a>
+                <strong> <a routerLink="/tasks"><i class="fas fa-home"></i>Ver todas</a></strong>
             </li>
         
 
             <div class="contact-container">
                 <li>
-                    <a (click)="mostrar = !mostrar" class="btn-contact"><i
-                            class="fas fa-info-circle"></i>Información</a>
+                   <strong> <a (click)="mostrar = !mostrar" class="btn-contact"><i
+                            class="fas fa-info-circle"></i>Información</a></strong>
                 </li>
                 <div [ngClass]="{ hide: mostrar }" class="contact-info">
                     <p class="cont-nombre">Agente: {{ contacto.nombre }}</p>

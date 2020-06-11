@@ -1,63 +1,82 @@
 <div class="total">
   <div class="search">
-    <div class="search-selector">
-      <div class="search-type">
-        <mat-form-field class="que_busc">
-          <mat-label class="que_bus">¿Qué busca?</mat-label>
-          <mat-select [(value)]="selected">
-            <mat-option value="comprar">Comprar</mat-option>
-            <mat-option value="alquilar">Alquilar</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div class="search-house">
-        <mat-form-field class="tipo_inm">
-          <mat-label class="tipo_in">Tipo inmueble</mat-label>
-          <mat-select [formControl]="InmuebleControl">
-            <mat-optgroup
-              *ngFor="let group of InmuebleGroups"
-              [label]="group.name"
-            >
-              <mat-option
-                *ngFor="let Inmueble of group.Inmueble"
-                [value]="Inmueble.value"
-              >
-                {{ Inmueble.viewValue }}
-              </mat-option>
-            </mat-optgroup>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div class="search-province">
-        <mat-form-field class="provin">
-          <mat-label class="prov">Provincia</mat-label>
-          <mat-select [(value)]="selected1">
-            <mat-option value="cadiz">Cádiz</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div class="search-population">
-        <mat-form-field class="popula">
-          <mat-label class="popul">Población</mat-label>
-          <mat-select [(value)]="selected2">
-            <mat-option value="cadiz">Cádiz</mat-option>
-            <mat-option value="conil">Conil de la Frontera</mat-option>
-            <mat-option value="">Cádiz</mat-option>
-            <mat-option value="Cádiz">Cádiz</mat-option>
-            <mat-option value="Cádiz">Cádiz</mat-option>
-            <mat-option value="Cádiz">Cádiz</mat-option>
-            <mat-option value="Cádiz">Cádiz</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <button class="btn-search" mat-raised-button>
-        <span>Encuéntralo </span>
-      </button>
+    
+    <div class="slider">
+      <ul>
+        <li>
+          <img src="assets/salon.jpg" alt="" />
+        </li>
+        <li>
+          <img src="assets/salon2.jpg" alt="" />
+        </li>
+        <li>
+          <img src="assets/salon3.jpg" alt="" />
+        </li>
+        <li>
+          <img src="assets/salon1.jpg" alt="" />
+        </li>
+      </ul>
     </div>
+
+      <div class="search-selector">
+        <div class="search-type">
+          <mat-form-field class="que_busc">
+            <mat-label class="que_bus">¿Qué busca?</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option value="comprar">Comprar</mat-option>
+              <mat-option value="alquilar">Alquilar</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="search-house">
+          <mat-form-field class="tipo_inm">
+            <mat-label class="tipo_in">Tipo inmueble</mat-label>
+            <mat-select [formControl]="InmuebleControl">
+              <mat-optgroup
+                *ngFor="let group of InmuebleGroups"
+                [label]="group.name"
+              >
+                <mat-option
+                  *ngFor="let Inmueble of group.Inmueble"
+                  [value]="Inmueble.value"
+                >
+                  {{ Inmueble.viewValue }}
+                </mat-option>
+              </mat-optgroup>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="search-province">
+          <mat-form-field class="provin">
+            <mat-label class="prov">Provincia</mat-label>
+            <mat-select [(value)]="selected1">
+              <mat-option value="cadiz">Cádiz</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="search-population">
+          <mat-form-field class="popula">
+            <mat-label class="popul">Población</mat-label>
+            <mat-select [(value)]="selected2">
+              <mat-option value="cadiz">Cádiz</mat-option>
+              <mat-option value="conil">Conil de la Frontera</mat-option>
+              <mat-option value="">Cádiz</mat-option>
+              <mat-option value="Cádiz">Cádiz</mat-option>
+              <mat-option value="Cádiz">Cádiz</mat-option>
+              <mat-option value="Cádiz">Cádiz</mat-option>
+              <mat-option value="Cádiz">Cádiz</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <button class="btn-search" mat-raised-button>
+          <span>Encuéntralo </span>
+        </button>
+      </div>
+    
   </div>
 
   <div class="TotalCard">
@@ -65,32 +84,30 @@
 
     <div class="featured-container">
       <!-- IZQUIERDA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
+      <app-housecard [house]="myhouse"></app-housecard>
 
       <!-- CENTRO -->
-      <app-housecard [house]= 'myhouse'></app-housecard>
+      <app-housecard [house]="myhouse"></app-housecard>
 
       <!-- DERECHA -->
-      <app-housecard [house]= 'myhouse'></app-housecard>
+      <app-housecard [house]="myhouse"></app-housecard>
 
       <hr class="line" />
 
       <div class="news-container">
-        <div class="news-title"><p>NOVEDADES</p></div>
+        <div class="news-title">
+          <p>NOVEDADES</p>
+        </div>
 
         <!-- IZQUIERDA -->
-        <app-housecard [house]= 'myhouse'></app-housecard>
+        <app-housecard [house]="myhouse"></app-housecard>
 
         <!-- CENTRO -->
-        <app-housecard [house]= 'myhouse'></app-housecard>
+        <app-housecard [house]="myhouse"></app-housecard>
 
         <!-- DERECHA -->
-        <app-housecard [house]= 'myhouse'></app-housecard>
-
+        <app-housecard [house]="myhouse"></app-housecard>
       </div>
-
     </div>
-
   </div>
-  
 </div>
