@@ -1,63 +1,8 @@
 
 <div class="TotalCard">
 
-    <div class="featured-container">
-      <!-- IZQUIERDA -->
-     <app-housecard  [house]= 'myhouse'></app-housecard>
-
-      <!-- CENTRO -->
-      <app-housecard [house]= 'myhouse'></app-housecard>
-
-      <!-- DERECHA -->
-      <app-housecard [house]= 'myhouse'></app-housecard>
-
-        <!-- IZQUIERDA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-
-     <!-- CENTRO -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-
-     <!-- DERECHA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-       <!-- IZQUIERDA -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
-
-       <!-- CENTRO -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
- 
-       <!-- DERECHA -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
-         <!-- IZQUIERDA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-
-     <!-- CENTRO -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-
-     <!-- DERECHA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-       <!-- IZQUIERDA -->
-       <app-housecard  [house]= 'myhouse'></app-housecard>
-
-       <!-- CENTRO -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
- 
-       <!-- DERECHA -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
-         <!-- IZQUIERDA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-
-     <!-- CENTRO -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-
-     <!-- DERECHA -->
-     <app-housecard [house]= 'myhouse'></app-housecard>
-       <!-- IZQUIERDA -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
-
-       <!-- CENTRO -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
- 
-       <!-- DERECHA -->
-       <app-housecard [house]= 'myhouse'></app-housecard>
+    <div *ngFor="let house of houses" class="all">
+     <app-housecard [house]="house"></app-housecard>
     </div>
+
 </div>

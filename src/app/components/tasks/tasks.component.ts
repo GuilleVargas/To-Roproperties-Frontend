@@ -10,36 +10,26 @@ import { HouseService } from '../../services/house.service';
 })
 export class TasksComponent implements OnInit {
 
-  tasks=[];
+  tasks = [];
 
   constructor(private houseService: HouseService ) { }
 
-
-  myhouse=  {
-    "_id": "5ed76adeafccf846f0922edc",
-    "title": "Piso adosado de roche",
-    "subtitle": "Cadiz, Urbanización de Roche",
-    "w_search": "Compra",
-    "type": "Piso adosado",
-    "province": "Malaga",
-    "population": "Urbanización Roche",
-    "room": 18,
-    "bath": 5,
-    "meters": 1780,
-    "price": 2000000
-  };
+  houses: any;
+  
   
   ngOnInit() {
-    
-
-    this.getHouses();
+    this.getAllHouses();
     }
 
-    getHouses() {
-      this.houseService.getHouses()
-        .subscribe(res => {
-          console.log(res);
+    getAllHouses() {
+      this.houseService
+        .request('http://localhost:3000/houses')
+        .subscribe((data) => {
+          this.houses = data;
+          console.log(data);
         });
     }
+
+    
 
 }

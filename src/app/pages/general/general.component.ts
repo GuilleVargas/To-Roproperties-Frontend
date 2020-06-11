@@ -39,21 +39,16 @@ export class GeneralComponent implements OnInit{
     "meters": 1780,
     "price": 2000000
   };
+  
   mostrar1 = false;
   mostrar2 = false;
   mostrar3 = false;
 
 ngOnInit(){
-  this.getAllHouses();
+  
 }
 
-getAllHouses() {
-  this.houseService
-    .request('http://localhost:3000/houses')
-    .subscribe((data) => {
-      console.log(data);
-    });
-}
+
 
   search = 'true';
 
