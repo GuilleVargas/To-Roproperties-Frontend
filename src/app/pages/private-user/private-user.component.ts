@@ -46,20 +46,7 @@ export class PrivateUserComponent implements OnInit {
       });
   }
 
-  putHouses(house: House) {
-    this.houseService.selectedHouses = house;
-  }
-
-  deleteHouses(_id: string, form: NgForm) {
-    if(confirm('Are you sure you want to delete it?')) {
-      this.houseService.deleteHouses(_id)
-        .subscribe(res => {
-          this.getHouses();
-          this.resetForm(form);
-          M.toast({html: 'Deleted Succesfully'});
-        });
-    }
-  }
+ 
 
   resetForm(form?: NgForm) {
     if (form) {

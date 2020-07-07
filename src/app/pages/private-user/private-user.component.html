@@ -1,112 +1,58 @@
-
 <div class="row">
   <div class="col-md-4 mx-auto">
-      <div class="card">
-          <div class="card-header">
-              Iniciar sesión
+    <div class="card">
+      <div class="card-header">
+        Iniciar sesión
+      </div>
+      <div class="card-body">
+        <form #housesForm="ngForm" (ngSubmit)="addHouses(housesForm)">
+          <div class="form-group">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="houseService.selectedHouses._id" /><br />
           </div>
-          <div class="card-body">
-            <form #housesForm="ngForm" (ngSubmit)="addHouses(housesForm)">
-                  <div class="form-group">
-                    <input
-                    type="hidden"
-                    name="_id"
-                    #_id="ngModel"
-                    [(ngModel)]="houseService.selectedHouses._id"
-                  /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                    type="text"
-                    name="w_search"
-                    #name="ngModel"
-                    [(ngModel)]="houseService.selectedHouses.w_search"
-                    placeholder="Enter your FullName"
-                  /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                    type="text"
-                    name="type"
-                    #name="ngModel"
-                    [(ngModel)]="houseService.selectedHouses.type"
-                    placeholder="Enter your Position"
-                  /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                  type="text"
-                  name="province"
-                  #name="ngModel"
-                  [(ngModel)]="houseService.selectedHouses.province"
-                  placeholder="Enter your Office"
-                /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                    type="text"
-                    name="population"
-                    #name="ngModel"
-                    [(ngModel)]="houseService.selectedHouses.population"
-                    placeholder="Enter your Salary"
-                  /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                  type="text"
-                  name="room"
-                  #name="ngModel"
-                  [(ngModel)]="houseService.selectedHouses.room"
-                  value="0"
-                  placeholder="Enter your Salary"
-                /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                  type="text"
-                  name="bath"
-                  #name="ngModel"
-                  [(ngModel)]="houseService.selectedHouses.bath"
-                  value="0"
-                  placeholder="Enter your Salary"
-                /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                  type="text"
-                  name="meters"
-                  #name="ngModel"
-                  [(ngModel)]="houseService.selectedHouses.meters"
-                  value="0"
-                  placeholder="Enter your Salary"
-                /><br/>
-                  </div>
-                  <div class="form-group">
-                    <input
-                  type="text"
-                  name="price"
-                  #name="ngModel"
-                  [(ngModel)]="houseService.selectedHouses.price"
-                  value="0"
-                  placeholder="Enter your Salary"
-                /><br/>
-                  </div>
-                  <div class="card-action">
-                    
-                      <button
-                        class="btn right"
-                        style="margin-left: 2px;"
-                        (click)="resetForm(housesForm)"
-                      >
-                        Clean
-                      </button>
-                      <button class="btn right">Save</button>
-                    
-                  </div>
-      
-              </form>
+          <div class="form-group">
+            <input type="text" name="w_search" #name="ngModel" [(ngModel)]="houseService.selectedHouses.w_search"
+              placeholder="Enter your FullName" /><br />
           </div>
-  </div>
-      
+          <div class="form-group">
+            <input type="text" name="type" #name="ngModel" [(ngModel)]="houseService.selectedHouses.type"
+              placeholder="Enter your Position" /><br />
+          </div>
+          <div class="form-group">
+            <input type="text" name="province" #name="ngModel" [(ngModel)]="houseService.selectedHouses.province"
+              placeholder="Enter your Office" /><br />
+          </div>
+          <div class="form-group">
+            <input type="text" name="population" #name="ngModel" [(ngModel)]="houseService.selectedHouses.population"
+              placeholder="Enter your Salary" /><br />
+          </div>
+          <div class="form-group">
+            <input type="text" name="room" #name="ngModel" [(ngModel)]="houseService.selectedHouses.room" value="0"
+              placeholder="Enter your Salary" /><br />
+          </div>
+          <div class="form-group">
+            <input type="text" name="bath" #name="ngModel" [(ngModel)]="houseService.selectedHouses.bath" value="0"
+              placeholder="Enter your Salary" /><br />
+          </div>
+          <div class="form-group">
+            <input type="text" name="meters" #name="ngModel" [(ngModel)]="houseService.selectedHouses.meters" value="0"
+              placeholder="Enter your Salary" /><br />
+          </div>
+          <div class="form-group">
+            <input type="text" name="price" #name="ngModel" [(ngModel)]="houseService.selectedHouses.price" value="0"
+              placeholder="Enter your Salary" /><br />
+          </div>
+          <div class="card-action">
+
+            <button class="btn right" style="margin-left: 2px;" (click)="resetForm(housesForm)">
+              Clean
+            </button>
+            <button class="btn right">Save</button>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+
   </div>
 </div>
